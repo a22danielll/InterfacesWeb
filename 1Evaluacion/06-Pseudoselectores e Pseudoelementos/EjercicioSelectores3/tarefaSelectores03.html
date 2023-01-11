@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Selectores</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+        
+    </style>
+    <link rel="stylesheet" type="text/css" href="selectores3.css">
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form>
+        <fieldset>
+            <legend>Creación de Personaxe</legend>
+            <div>
+                <label for="nome">Nome da Personaxe</label>
+                <input id="nome" type="text" name="nome" placeholder="Nome da Personaxe" pattern="[a-zA-Z]+">
+            </div>
+            <div>
+                <label for="profesion">Profesión</label>
+                <select id="profesion" name="profesion">
+                <option value="oculista">Oculista</option>
+                <option value="policia">Policía</option>
+                <option value="instrumentista">Instrumentista</option>
+                <option value="taxista">Taxista</option>
+              </select>
+            </div>
+            <div>
+                <label for="valoracion">Valoración</label>
+                <input id="valoracion" type="number" min="1" max="100" value="50" > 
+            </div>
+            <div>
+                <label for="dificultade">Dificultade extra</label>
+                <input id="dificultade" type="checkbox" value="dificultadeExtra">
+                <span></span>
+            </div>
+            <div>
+                <input type="submit" value="Crear Personaxe" name="submit">
+            </div>
+            <div>
+                <p>Algúns campos son obrigatorios, como por exemplo <a href="#nome"> o nome</a>, por favor, revísaos.</p>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

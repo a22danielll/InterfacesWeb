@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  
+}
+.table{
+  width: 740px;
+  text-align: center;
+  margin: auto;
+  
+}
+.fila1 {
+  display: flex;
+}
+
+
+.fila1 div{
+  border: 1px solid black;
+  flex-basis: 33.3%;
+}
+
+.fila3 div{
+  border: 1px solid black;
+  flex-basis: 33.3%;
+}
+.fila4 div{
+  border: 1px solid black;
+  flex-basis: 33.3%;
+}
+.fila2 {
+  display: flex;
+  justify-content: space-between;
+}
+.fila2 div{
+  border: 1px solid black;
+  flex-basis: 16.8%;
+}
+
+.fila3 {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.fila3 div{
+  border: 1px solid black;
+  flex-basis: 50%;
+}
+
+.fila4 {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.fila4 div{
+  border: 1px solid black;
+  flex-basis: 25%;
+}

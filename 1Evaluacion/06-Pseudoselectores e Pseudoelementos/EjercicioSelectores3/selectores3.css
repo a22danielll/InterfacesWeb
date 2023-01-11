@@ -1,0 +1,70 @@
+
+@import url(https://fonts.gstatic.com/s/grenze/v14/O4ZTFGb7hR12BxqH92Imqgw.woff2);
+input[type="submit"]{
+    background-color: #ffdc8a;
+}
+/*
+Fíxate que todos os campos do formulario teñen unha etiqueta asociada. Isto axuda ás tecnoloxías asistenciais aportando significado á información que se solicita en cada campo.
+As etiquetas label, input, select e p teñen definida unha marxe de 0.5em e un padding de 0.5em.
+Ademais:*/
+
+label, input, select , p{
+    margin: 0.5em;
+    padding: 0.5em;
+}
+select{
+    border-radius: 50px;
+}
+/*Observa que está importada un tipo de letra de Google. 
+Fai que todos os elementos teñan ese tipo de letra.*/
+*{
+    font-family: 'Grenze';
+      
+}
+/*Cando un elemento de tipo input teña o foco debe ter un borde vermello.*/
+input:focus{
+    border:5px solid red;
+}
+/*As cores de fondo son: #ffdc8a e #f1f1f1.*/
+input{
+    background: #ffdc8a ;
+}
+select{
+    background-color: #f1f1f1 ;
+    border-radius: 50px;
+}
+
+/*Elimina o borde do botón.*/
+input[type="submit"]{
+    border: none;
+    border-radius: 50px;
+}
+
+/*O nome da personaxe só debe conter letras (maiúsculas ou minúsculas).
+En caso contrario cambiará a cor de fondo a vermello.*/
+
+input#nome:invalid{
+    background-color: red;
+}
+/*A valoración debe ser un número entre 1 e 100. En caso contrario, 
+cambiará a cor de fondo a vermello.*/
+#valoración:invalid{
+    background-color: red;
+}
+input#dificultade:checked{
+    background-color: red;
+    color: white;
+}
+
+/*Se o checkbox “Dificultade extra” está seleccionada, debe aparecer a imaxe “cthulhu.svg” ao lado cun tamaño de 50x50px.
+*/
+
+input#dificultade:checked::after{
+    background-image: url("cthulhu.svg");
+    background-size:50px 50px ;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    content: " ";
+    margin-left: 20px;
+}

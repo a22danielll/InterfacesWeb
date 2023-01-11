@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form>
+      <table>
+        <tr>
+          <th>Nombre:</th>
+          <td><input type="text" name="nombre" /></td>
+        </tr>
+        <tr>
+          <th>Email:</th>
+          <td>
+            <input type="text" name="email" pattern=".+@globex\.com" required />
+          </td>
+        </tr>
+        <tr>
+          <th>Contraseña:</th>
+          <td><input type="password" name="passwd" /></td>
+        </tr>
+      </table>
+
+      <br />
+      <input type="file" name="button1" value="Seleccionar archivo" />
+      <br /><br />
+      <input type="submit" name="button2" value="Enviar" />
+      <input type="reset" name="button3" value="Borrar" />
+    </form>
+    <br /><a href="EjerciciosHTML.html">Inicio</a>
+  </body>
+</html>

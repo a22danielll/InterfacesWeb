@@ -1,0 +1,23 @@
+body {
+  width: 40%;
+  margin: auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4,60px);
+  grid-template-rows: repeat(3,60px);
+  grid-auto-flow: column;
+  gap: 10px;
+  
+}
+
+ .box {
+  display: flex;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+}

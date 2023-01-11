@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .tabla1 {
+        background-color: #BBBBBB;
+        border: solid 1px grey;
+      }
+      legend {
+        background-color: white;
+        border: solid 1px black;
+      }
+      .espacio {
+        padding-left: 40px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscripcion</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Folla de inscripción</h1>
+    <h1 style="text-align: center">Nos ciclos formativos de grao superior</h1>
+    <form>
+      <fieldset id="datosPersonales" class="tabla1">
+        <legend id="bordesLegends">Datos Personais</legend>
+        <table>
+          <thead>
+            <tr>
+              <td colspan="">Nome:</td>
+              <td class="espacio">Apelidos:</td>
+              <td>DNI</td>
+            </tr>
+            <tr>
+              <td><input type="text" name="nome" /></td>
+              <td class="espacio"><input type="text" name="apelidos" /></td>
+              <td><input type="text" name="dni" /></td>
+            </tr>
+            <tr>
+              <td>Localidade de Nacemento</td>
+              <td class="espacio">Provincia</td>
+              <td>Data de Nacemento</td>
+            </tr>
+            <tr>
+              <td><input type="text" name="localidade" /></td>
+              <td class="espacio">
+                <select name="provincia">
+                  <option>Pontevedra</option>
+                  <option>villagarcia</option>
+                  <option>Lalín</option>
+                  <option>Tui</option>
+                </select>
+              </td>
+              <td>
+                <input type="date" name="fecha" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">Enderezo</td>
+              <td>Código Postal</td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" name="enderezoText" size="40"/></td>
+              <td><input type="text" name="txtCodPostal" /></td>
+            </tr>
+          </thead>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset id="FormaAcceso" style="background-color:#F0C2A0;">
+        <legend id="bordesLegends">Forma de acceso</legend>
+        <br />
+        <table>
+          <ul style="list-style-type: none;">
+            <li><input type="radio" name="acceso" value="Directo" />
+            <label for="Directo">Directo</label></li>
+            <ul style="list-style-type: none;">
+              <li><input type="radio" name="bacharelato" value="bacharelato">
+                <label for="bacharelato">Bacharelato Log Modalidade</label>
+                <input type="text" name="txtBach" >
+              </li>
+              <li><input type="radio" name="experimental" value="experimental">
+                <label for="experimental">Experimental</label>
+              </li>
+              <li><input type="radio" name="cou" value="COU">
+                <label for="cou">COU Opcion</label>
+                <input type="text" name="txtCou" >
+              </li>
+              <li><input type="radio" name="fp2" value="fp2">
+                <label for="fp2">FP2</label>
+              </li>
+              <li><input type="radio" name="outras" value="otras">
+                <label for="outras">Outros(especifique)</label>
+                <input type="text" name="outro" >
+              </li>
+            </ul>
+            <li><input type="radio" name="proba" value="proba libre" />
+              <label for="proba">Proba Libre</label></li>
+          </ul>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset id="domentosXuntados" style="background-color: #B57F7F;">
+        <legend id="bordesLegends">Domentos Xuntados</legend>
+        <table>
+          <tr>
+            <td><input type="checkbox">Fotografia DNI</input></td>
+            <td><input type="checkbox">Certificado academico</input></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox">Outros documentos(especifique)</input></td>
+            <td><input type="text" name="outros" ></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br>
+      <input type="button" name="solicitude" value="Enviar Solicitude">
+    </form>
+  </body>
+</html>

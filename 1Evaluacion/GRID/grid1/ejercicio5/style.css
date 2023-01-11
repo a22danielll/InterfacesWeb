@@ -1,0 +1,53 @@
+body {
+    width: 40%;
+    margin: auto;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c d" ;
+    gap: 10px;
+  }
+  .container div{
+    border: 1px solid black;
+  }
+
+  .a{
+    grid-area: a;
+    padding: 0.5em;
+  }
+  .b{
+    grid-area: b;
+    padding: 0.5em;
+  }
+  .c{
+    grid-area: c;
+    padding: 0.5em;
+  }
+  .d{
+    grid-area: d;
+    display: grid;
+    gap: 10px;
+    padding: 0.5em;
+    grid-template-areas:
+    "e e"
+    "f g" ;
+  }
+  .e{
+    grid-area: e;
+    padding: 0.5em;
+    background-color: lightblue;
+  }
+  .f{
+    grid-area: f;
+    padding: 0.5em;
+    background-color: lightblue;
+  }
+  .g{
+    grid-area: g;
+    padding: 0.5em;
+    background-color: lightblue;
+  }
+

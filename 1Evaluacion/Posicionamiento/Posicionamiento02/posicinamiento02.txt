@@ -1,0 +1,73 @@
+1. ¿Que tipo de posicionamento teñen as caixas?
+
+static
+
+
+2. ¿Que código habería que engadir para que a caixa12 teña un posicionamento
+relativo tal que se desprace 20px cara arriba e 10px cara a esquerda?
+
+position: relative;
+
+3. ¿Móvense as demais caixas ao realizar o exercicio anterior? ¿Por que?
+
+No, se moven, ya que solo estamos posicionando un elemento en concreto.
+
+4. Elimina o posicionamento relativo de exercicios anteriores. Engade agora para a
+caixa12 un posicionamento absoluto a 50px da parte superior da pantalla e 30px da
+esquerda. ¿Desprazaríase a caixa12? ¿Por que?
+si, porque ya que su posicionamiento es absoluto se sobrepone sobre las demás cajas.
+
+5. ¿Que sucedería se se mantén o posicionamento absoluto do punto anterior e se
+engade un posicionamento relativo a “contido1”?
+
+El contenido1 se superpone al contenido ya que tiene 
+la propiedad abssoluta y el contenido 2 tiene el posicionamoento relativo.
+
+6. ¿Que sucedería se a caixa 12 mantén o posicionamento absoluto e se cambia
+“contido1” pasa a ter posicionamento static?
+
+Estaría como al principio el contenido 1 
+y la caja12 se sigue superponiendo al contenido1
+
+7. ¿Que sucedería se a caixa 12 mantén o posicionamento absoluto e se cambia
+“contido1” pasa a ter posicionamento absoluto?
+
+La caja12 se superpone al contenido 1 y 
+el contenido 1 superpone a su vez al contenido2
+
+8. Pon todas as caixas como estaban ao comezo do exercicio. Indica o código que
+habería que engadir para que a caixa21 teña unha posición fixa a 100px da parte
+inferior da pantalla e a 60px da dereita, independentemente de se se despraza o
+scroll.
+
+caixa21{
+    ...
+    position:fixed;
+    margin-bottom:100px;
+    margin-right:60px;
+}
+
+9. Mantendo o posicionamento do exercicio anterior, se “contido2” pasa a ter
+posicionamento relativo, ¿modifícase a posición da caixa21?
+
+No habría ningun cambio
+
+10. Pon todas as caixas como estaban ao comezo do exercicio. ¿Como se ve “contido1”
+3
+se se establece que o contido de caixa11, caixa12 e caixa13 floten cara a dereita?
+Explica por que se ve así e como farías para arreglalo.
+
+El contenido 1 no se mostraria ningun contenido, ya que no tiene ninguna propiedad float.
+Se arreglaria incluyendole la propiedad float.
+
+11. Pon todas as caixas como estaban ao comezo do exercicio. Establece o ancho de
+“contido1” e “contido2” a 300px. ¿Por que non se ven do mesmo tamaño?. ¿Que
+farías para solucionalo?
+
+No se ven del mismo tamaño ya que en el contenido 2 tiene la propiedad padding de 10px,
+la solución sería invluyendole la propiedad padding al contenido1 o quietandole la propiedad padding al contenido2.
+
+12. Pon todas as caixas como estaban ao comezo do exercicio. Establece o
+posicionamento de contido2 a absoluto. Indica que sucede.
+
+El contenido2 esta fuera del contenedor.

@@ -1,0 +1,191 @@
+body {
+  background-color: blanchedalmond;
+}
+h1 {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10px, auto);
+}
+.titulo {
+  vertical-align: middle;
+  font-size: 50px;
+}
+.menu p {
+  background-color: lightgrey;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+}
+
+.menu p a:hover {
+  background-color: black;
+  color: beige;
+}
+
+
+
+.opciones1 {
+  grid-row: 1;
+  grid-column: 3;
+  font-size: 20px;
+}
+.opciones2 {
+  grid-column: 3;
+  grid-row: 1;
+  font-size: 20px;
+  grid-row-end: auto;
+  margin-top: 50px;
+}
+
+.productos {
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10px, auto);
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  
+}
+
+.one p img{
+  width: 130px;
+  height: 130px;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.two p img{
+  width: 130px;
+  height: 130px;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+.three p img{
+  width: 130px;
+  height: 130px;
+}
+.four {
+  grid-column: 4;
+  grid-row: 1;
+}
+.four p img{
+  width: 130px;
+  height: 130px;
+}
+.five {
+  grid-column: 1;
+  grid-row: 2;
+}
+.five p img{
+  width: 130px;
+  height: 130px;
+}
+.six {
+  grid-column: 2;
+  grid-row: 2;
+}
+.six p img{
+  width: 130px;
+  height: 130px;
+}
+.seven {
+  grid-column: 3;
+  grid-row: 2;
+}
+.seven p img{
+  width: 130px;
+  height: 130px;
+}
+.eight {
+  grid-column: 4;
+  grid-row: 2;
+}
+.eight p img{
+  width: 130px;
+  height: 130px;
+}
+.nine {
+  grid-column: 1;
+  grid-row: 3;
+}
+.nine p img{
+  width: 130px;
+  height: 130px;
+}
+.ten {
+  grid-column: 2;
+  grid-row: 3;
+}
+.ten p img{
+  width: 130px;
+  height: 130px;
+}
+img {
+  height: 5em;
+  width: 5em;
+}
+.pos {
+  text-align: center;
+}
+
+iframe {
+  height: 150px;
+  width: 150px;
+}
+
+.piePagina {
+  background: lightgrey;
+  text-align: left;
+  color: blue;
+  position: relative;
+  margin-top: -10px;
+  width: 98%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10px, auto);
+}
+
+main > p {
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+
+#icono p {
+  
+  margin-left: 200px;
+}
+#icono p img{
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+

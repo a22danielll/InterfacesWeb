@@ -1,0 +1,26 @@
+h2:nth-of-type(1){
+    color: purple;
+}
+h2::first-letter{
+    color: red;
+
+}
+
+article div ul li:nth-child(odd):hover{
+    color: red;
+    
+}
+/*odd para indicar los numeros impares*/
+article div ul li:nth-child(odd):hover{
+    color: red;
+    
+}
+/*even para indicar los numero pares*/
+article div ul li:nth-child(even):hover::before{
+content: "O número " ;
+}
+
+article div ul li:nth-child(even):hover::after{
+    content: " é par ";
+
+}
