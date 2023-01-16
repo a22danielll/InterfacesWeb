@@ -1,6 +1,4 @@
-
-
-div.container div  {
+div.container div.row div  {
     height: 300px;
   }
   
@@ -11,3 +9,7 @@ div.container div  {
   div.blue {
     background-color: blue;
   }
+
+  
+
+  
