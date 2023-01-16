@@ -1,13 +1,12 @@
-
-
-div.container div div {
-    height: 600px;
-  }
-  
-  div.orange {
+.container{
+    background-color: red;
+    height: 300px;
+}
+.orange{
     background-color: orange;
-  }
-  
-  div.blue {
+    height: 20px;
+}
+.blue{
     background-color: blue;
-  }
+    height: 20px;
+}
