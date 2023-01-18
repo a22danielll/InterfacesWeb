@@ -16,49 +16,57 @@
     <link rel="stylesheet" href="style.css" />
     <title>Hello, world!</title>
   </head>
-  <body>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- trabajar de forma local-->
-    <script
+  <script
       /*src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"*/
       src="js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
-
+  <body>
     <div class="container mt-3">
-
+      <div class="row">
+        <div class="col-md-12 col-sm-12 border border-1  bg-success text-center">Cabeceira</div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-3 col-md-3 offset-md-3 border border-1 bg-danger text-center">1</div>
+        <div class="col-6 col-md-3 col-sm-3  border border-1 bg-danger text-center">2</div>
+        <div class="w-100 d-none d-md-block"></div>
+        <div class="col-6 col-md-3 col-sm-3 border border-1 bg-danger text-center">3</div>
+        <div class="col-6 col-md-3 offset-md-6 col-sm-3  border border-1 bg-danger text-center">4</div>
+      </div>
 
       <div class="row">
-        <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 col-sm-12 border border-1  bg-success text-center">Cabeceira</div>
-      
-        
-        <!--Tercera fila-->
-        <div class="row">
-          <div class="col-md-2 col-lg-2 col-xl-2 col-xxl-2 col-sm-4 col-6 border border-1 bg-info text-center">1</div>
-          <div class="col-md-2 col-sm-4 col-6 border border-1 bg-info text-center">2</div>
-          <div class="col-md-4  col-sm-4 col-6 border border-1 bg-info text-center">3</div>
-          <div class="col-md-2  col-sm-4 col-6 border border-1 bg-info text-center">4</div>
-          <div class="col-md-2 col-sm-4 col-6 border border-1 bg-info text-center">5</div>
-        </div>
-
-        <div class=" col-sm-2 d-none  d-sm-block border border-1 bg-primary text-center">Tablet</div>
-        <div class="row"></div>
-          <div class="col-md-2 col-sm-4 col-6 border border-1 bg-info text-center">6</div>
-          <div class="col-md-2  col-sm-4 col-6 border border-1 bg-info text-center">7</div>
-          <div class="col-md-4  col-sm-4 col-6 border border-1 bg-info text-center">8</div>
-          <div class="col-md-2 col-sm-4 col-6 border border-1 bg-info text-center">9</div>
-          <div class="col-md-2  col-sm-4 col-6 border border-1 bg-info text-center">10</div>
-        </div>
-        <!--Quinta fila-->
-        <div class="row">
-          <div class="col-sm-12 col-lg-12 col-xl-12 col-xxl-º1 col-xs border   border-1 bg-secondary text-center">Pie de pagina</div>
-        </div>
+        <div class="col-sm-12 d-none d-md-none d-sm-block border border-1 bg-primary text-center">Tablet</div>
       </div>
       
+
+      <div class="row">
+        <div class="col-6 col-sm-3 order-md-4 border border-1 bg-secondary text-center">A</div>
+        <div class="col-6 col-sm-3 order-md-3 border border-1 bg-secondary text-center">B</div>
+        <div class="col-6 col-sm-3 order-md-2 border border-1 bg-secondary text-center">C</div>
+        <div class="col-6 col-sm-3 border border-1 bg-secondary text-center">D</div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-12 d-none d-none  d-md-block border border-1 bg-primary text-center">Ordenador</div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-block d-sm-none border border-1 bg-primary text-center">Mobil</div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-sm-6 offset-md-3 col-md-3 d-none d-sm-block  border border-1 bg-warning text-center">X</div>
+        <div class="col-sm-6 col-md-3  border border-1 bg-warning text-center">Y</div>
+      </div>
+
+      
+      <div class="row">
+        <div class="col-sm-12 d-none d-sm-block border border-1 bg-success text-center">Pie de pagina</div>
+      </div>
+      </div>
+      
+ 
       
     </div>
   </body>
