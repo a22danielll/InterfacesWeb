@@ -8,3 +8,6 @@ a:hover{
     color:pink !important;
 
 }
+.form-control{
+    border-radius: 2em;
+}
