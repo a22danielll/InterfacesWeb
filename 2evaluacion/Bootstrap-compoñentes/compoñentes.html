@@ -10,82 +10,199 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <style></style>
+    
     <title>Document</title>
   </head>
   <body>
-    <a href="https://getbootstrap.com/docs/5.0/components/modal/"
-      >pantalla modal</a
-    >
     <div class="container-fluid">
       <div class="row bg-black">
         <div class="col-12 d-inline-flex">
           <!--icono-->
-          <!--<div class="col-1">
-            <img src="img/logo.png" width="30"  />
-          </div>-->
+          
           <!--menu-->
           <div class="col-6 d-inline-flex">
             <img src="img/logo.png" width="30" />
-            <ul class="nav nav-tabs mx-2">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  data-bs-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-expanded="false"
-                  >Novas</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  data-bs-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-expanded="false"
-                  >Nos</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  data-bs-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-expanded="false"
-                  >Contacto</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                </ul>
-              </li>
-            </ul>
+            <nav class=" navbar navbar-expand-md navbar-light   ">
+              <button
+                class="navbar d-md-none"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon "></span>
+              </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link  text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        inicio
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Novas
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ultimas novas</a></li>
+                        <li><a class="dropdown-item" href="#">Novas destacadas</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Nos
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">A Empresa</a></li>
+                        <li><a class="dropdown-item" href="#">Traballa con nos</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Contacto
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">onde estamos?</a></li>
+                        <li><a class="dropdown-item" href="#">Servizo ao cliente</a></li>
+                      </ul>
+                    </li>
+              </ul>
+            </div>
           </div>
+        </nav>
           <div class="col-6 justify-content-end d-inline-flex">
-            <button class="text-white bg-primary">Identificarse</button>
-            <button class="text-white bg-primary">Registro</button>
+            <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Identificarse</button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Identify</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="m-2">
+                      <label for="inputemail" class="form-label">email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputemail"
+                        placeholder="email"
+                      />
+                    </div>
+                    <div class="m-2">
+                      <label for="inputpass" class="form-label col-form-label-lg"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control form-control-sm"
+                        id="inputpass"
+                        placeholder="passwd"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">identify</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--------registro-->
+            <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#registro"">Registro</button>
+            
+            
+            <!-- Modal -->
+            <div class="modal fade" id="registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registro">Identify</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="m-2">
+                      <label for="inputnombre" class="form-label">Nombre</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputnombre"
+                        placeholder="nombre"
+                      />
+                    </div>
+                    <div class="m-2">
+                      <label for="inputapellido" class="form-label">Apellidos</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputapellido"
+                        placeholder="apellido"
+                      />
+                    </div>
+                    <div class="m-2">
+                      <label for="inputemail" class="form-label">email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputemail"
+                        placeholder="email"
+                      />
+                    </div>
+                    <div class="m-2">
+                      <label for="inputpass" class="form-label col-form-label-lg"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control form-control-sm"
+                        id="inputpass"
+                        placeholder="passwd"
+                      />
+                    </div>
+                    <div class="m-2 d-inline-flex form-check">
+                      <label for="inputrol" class="form-label col-form-label-lg"
+                        >ROL: </label
+                      >
+                      
+                      <label for="toggle1" class="btn btn-outline-danger">alumno</label>
+                      <input type="radio" class="btn-check" id="toggle1">
+                      <label for="toggle2" class="btn btn-outline-danger">profesor</label>
+                      <input type="radio" class="btn-check" id="toggle2">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        </div>
       </div>
+      <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+        myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+        })
+      </script>
       <div class="row justify-content-center mt-3">
-        <div class="col-8">
+        <div class="col-8 " role="alert">
+          
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button
@@ -156,32 +273,107 @@
           </div>
         </div>
       </div>
-      <div class="row bg-black mt-3">
+      <div class="row bg-black mt-3 justify-content-center">
         <div class="col-12 text-white text-center">
           <h1>Cursos ofertados</h1>
         </div>
       </div>
       <div class="row mt-3 justify-content-center">
-        
-        <div class="col-3 border text-center mx-2 ">
-          <img class="img-responsive img-fluid" src="img/Bootstrap5_logo.png">
-          <p>Hola paragai</p>
+        <div class="alert alert-danger" role="alert">
+          A simple success alert—check it out!
         </div>
-          <div class="col-3 border text-center mx-2 ">
-            <img class="img-responsive img-fluid" src="img/mysql.png">
-            <p>Hola paragai</p>
+        <div class="card-group ">
+          
+          <div class="card border bordered m-3" >
+
+            <img class="card-img-top w-100"  src="img/Bootstrap5_logo.png" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+          
+            <div class="card-body">
+              <h5>Curso Bootstrap 5</h5>
+              <h6 class="card-text" > Fai a tua web de manera sinxela</h5>
+              <p class="card-text">Aprenderas como deseñar sitios web con framework de deseño responsivo mais utilizado e importante do mundo</p> 
+            </div>
+            
           </div>
-          <div class="col-3 border text-center mx-2 ">
-            <img class="img-responsive img-fluid" src="img/gimp.png">
-            <p>Hola paragai</p>
+          <div class="card border bordered m-3">
+            <img class="card-img-top w-100"  src="img/mysql.png">
+            <div class="card-body">
+              <h5 class="card-title">Curso MySQL</h5>
+              <h6 class="card-text">Todo a potencia de SQL</h6>
+              <p class="card-text">MySQL pon a potencia das bases de datoos relacionais ao teu alcance</p>
+            </div>
           </div>
+          <div class="card border bordered m-3">
+            <img class="card-img-top w-100"  src="img/gimp.png">
+            <div class="card-body">
+              <h5 class="card-title">Curso GIMP</h5>
+              <h6 class="card-text">Dalle vida a tua web</h6>
+              <p class="card-text">GIMP(GNU image Manipulacion Programacion) e un programa de edicion de imagen dixitais en forma de mapa de bits, tanto debuxos como fotografia</p>
+            </div>
+          </div>
+        
+        </div>
           
       </div>
+      <div class="row bg-black mt-3 justify-content-center">
+        <div class="col-12 text-white text-center">
+          <h1>¿Quieres falar con nos?</h1>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-center">
+        <div class="col-4 text-white text-center">
+          <div class="m-3">
+            <label for="select1">Escoje una opcion</label>
+            <select id="select1" class="form-select" size="4">
+              <option value="1">conectar</option>
+              <option value="2">sugerencias</option>
+              <option value="3">Empresas</option>
+                
+            </select>
+        </div>
+      </div>
+      <div class="col-4 text-white text-center">
+        <div class="m-3">
+          <div class="m-2">
+            <label for="inputpass" class="form-label col-form-label-lg"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control form-control-sm"
+              id="inputpass"
+              placeholder="passwd"
+            />
+          </div>
+          <div class="m-2">
+            <label for="inputComentarios" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="comentID"></textarea>
+          </div>
+      </div>
     </div>
+    </div>
+    <div class="row bg-black mt-3 justify-content-center">
+      <div class="col-12 text-white text-center">
+        <p>@IES San clemente Todos os dereitos reservados</p>
+      </div>
+    </div>
+    
+    
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+ 
 </html>
