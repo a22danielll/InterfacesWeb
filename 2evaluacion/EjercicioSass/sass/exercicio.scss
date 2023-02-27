@@ -1,0 +1,29 @@
+$menu: purple;
+$colorBlanco: white;
+$borde: 1px solid black;
+nav {
+  background-color: $menu;
+  ul {
+    display: flex;
+    li {
+      padding: 10px;
+      list-style: none;
+    }
+  }
+}
+.container {
+  .card {
+    border: $borde;
+    border-radius: 2em;
+    text-align: center;
+    padding: 2em;
+
+    img {
+      border-radius: 3em;
+    }
+  }
+}
+
+.active {
+  color: $colorBlanco;
+}
