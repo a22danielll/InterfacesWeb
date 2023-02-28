@@ -1,4 +1,4 @@
-$menu: purple;
+$menu: rgb(145, 111, 175);
 $colorBlanco: white;
 $borde: 1px solid black;
 nav {
@@ -6,20 +6,29 @@ nav {
   ul {
     display: flex;
     li {
-      padding: 10px;
+      padding: 1em;
       list-style: none;
     }
   }
 }
 .container {
+  margin: 0 auto;
+
   .card {
     border: $borde;
     border-radius: 2em;
     text-align: center;
-    padding: 2em;
+    width: 300px;
+    display: inline-flex;
+    flex-direction: column;
 
     img {
-      border-radius: 3em;
+      border-radius: 2em;
+      width: 250px;
+      padding: 1em;
+    }
+    figcaption {
+      padding-bottom: 1em;
     }
   }
 }
