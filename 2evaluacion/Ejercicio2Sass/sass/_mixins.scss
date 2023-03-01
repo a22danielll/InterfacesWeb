@@ -36,7 +36,9 @@
       rgba($r-from, $g-from, $b-from, $alpha),
       rgba($r-to, $g-to, $b-to, $alpha)
     ),
-    url($imgurl) no-repeat unquote($background-top) unquote($background-left)
+    url($imgurl) no-repeat$r_deep-blue, $g_deep-blue, $b_deep-blue,
+    $r_light-blue, $g_light-blue, $b_light-blue, $alpha_cover,
+    $cover_picture unquote($background-top) unquote($background-left)
       unquote($background-attachment);
   background: linear-gradient(
       rgba($r-from, $g-from, $b-from, $alpha),
@@ -83,7 +85,6 @@
     font-weight: $font-weight;
   }
 }
-
 @mixin center-vertical() {
   position: relative;
   border-top: 50%;

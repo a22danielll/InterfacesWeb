@@ -16,36 +16,36 @@
   );
   height: 100%;
   color: $pure-white;
-}
 
-h1 {
-  @include headers;
-  margin-bottom: 30px;
-}
-img {
-  height: 30vh;
-  @include center-horizontal();
-}
-.logo {
-  font-size: 50px;
-  width: 100%;
-  text-align: center;
-  color: $pure-white;
-  .bold {
-    font-weight: $ultra-bold;
+  h1 {
+    @include headers;
+    margin-bottom: 30px;
   }
-  .thin {
+  img {
+    height: 30vh;
+    @include center-horizontal;
+  }
+  .logo {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: $pure-white;
+    .bold {
+      font-weight: $ultra-bold;
+    }
+    .thin {
+      font-weight: $light;
+    }
+  }
+  p {
+    margin-top: 20px;
+    font-weight: $regular;
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+    @include center-horizontal;
     font-weight: $light;
   }
-}
-p {
-  margin-top: 20px;
-  font-weight: $regular;
-  width: 60%;
-  text-align: center;
-  font-size: 20px;
-  @include center-horizontal;
-  font-weight: $light;
 }
 
 #section-2 {
@@ -54,152 +54,140 @@ p {
   color: $light-blue;
   .content {
     // Escribe a regra necesaria para incluír código do mixin “center-vertical”
-    @include center-vertical();
+    @include center-vertical;
   }
   h1 {
     // Escribe a regra necesaria para incluír código do mixin “headers”
-    @include headers();
+    @include headers;
     // Marxe superior de 0
     margin-top: 0;
-    // Marxe inferior dh1e 40px
-    margin#section-3 {
-      background-color: $light-blue;
-      height: 100vh;
-      // Define os estilos para o elemento h1 coas seguintes características:
-      // - debe incluír o código do mixin headers
-      @include headers();
-      // - a cor do texto debe ser $pure-white
-      color: $pure-white;
-      // - un marxe superior de 0
-      margin-top: 0;
-      // Establece os seguintes estilos para .pricing-table
-      .pricing-table {
-        // - ancho do 100%
-        width: 100%;
-        // Se analizas o html observarás que pricing-table ten aniñados “price” e
-        // dentro deste hai outros aniñados: img, h2, description, money.
-        // Aquí vanse definir os estilos de cada elemento.
-        // Decide ti o código facendo os aniñamentos necesarios
-        // price debe ter os estilos
-        .price {
-          // - cor do texto $almost-white
-          color: $almost-white;
-          // - texto centrado
-          text-align: center;
-          // - tamaño da fonte 30px
-          font-size: 30px;
-          // - ancho do 30%
-          width: 30%;
-          // - display inline-block
-          display: inline-block;
-          // - padding 20px todos os lados.
-          padding: 20px;
-
-          // img:
-          img {
-            // - ancho de 15%-bottom: 40px;
-            width: 15%;
-            bottom: 40px;
-            // O Peso da fonte debe ter o valor 300. Busca que variable debes asignar
-            font-weight: 300;
-          }
-        }
-      }
-    }
-    form {
-      .form-element {
-        display: block;
-        input[type='text'] {
-          border-style: none;
-          background: none;
-          outline: none;
-          // esta funcion -> darken(color,porcentaje), obscurece
-          // un color en cie porcentaje
-          border-bottom: solid 2px darken($almost-white, 20%);
-          font-size: 50px;
-          font-weight: $light;
-          font-family: 'Lato', sans-serif;
-          width: 60%;
-          margin-left: 20%;
-          text-align: center;
-          margin-top: 15px;
-          margin-bottom: 30px;
-          color: $light-blue;
-          transition: all 0.3s ease 0s;
-          padding-bottom: 20px;
-          &:focus {
-            border-bottom: solid 2px $light-blue;
-          }
-        }
-        button {
-          font-size: 50px;
-          font-weight: $light;
-          font-family: 'Lato', sans-serif;
-          //background: none;
-          background: $light-blue;
-          border: 1px solid $light-blue;
-          color: $pure-white;
-          width: 60%;
-          outline: none;
-          margin-left: 20%;
-          margin-top: 30px;
-          margin-bottom: 30px;
-          transition: all 0.3s ease 0s;
-          padding: 20px 20px 20px 20px;
-          &:hover {
-            background: none;
-            //background: $light-blue;
-            color: $light-blue;
-            border: 1px solid $light-blue;
-          }
-        }
-      }
-    }
-
-    // Escribe a regra necesaria para incluír código do mixin “placeholder” co
-    @include placeholder($almost-white, 100);
-    // parámetro $color con valor $almost-white escurecido un 20% e o parámetro
-    // $font-weight con valor 100 (busca a variable adecuada a este valor).
+    // Marxe inferior de 40px
+    margin-bottom: 40px;
+    // O Peso da fonte debe ter o valor 300. Busca que variable debes asignar
+    font-weight: 300;
   }
+  form {
+    .form-element {
+      display: block;
+      input[type='text'] {
+        border-style: none;
+        background: none;
+        outline: none;
+        // esta funcion -> darken(color,porcentaje), obscurece
+        // un color en cierto porcentaje
+        border-bottom: solid 2px darken($almost-white, 20%);
+        font-size: 50px;
+        font-weight: $light;
+        font-family: 'Lato', sans-serif;
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        color: $light-blue;
+        transition: all 0.3s ease 0s;
+        padding-bottom: 20px;
+        &:focus {
+          border-bottom: solid 2px $light-blue;
+        }
+      }
+      button {
+        font-size: 50px;
+        font-weight: $light;
+        font-family: 'Lato', sans-serif;
+        //background: none;
+
+        background: $light-blue;
+        border: 1px solid $light-blue;
+        color: $pure-white;
+        width: 60%;
+        outline: none;
+        margin-left: 20%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        transition: all 0.3s ease 0s;
+        padding: 20px 20px 20px 20px;
+        &:hover {
+          background: none;
+          //background: $light-blue;
+          color: $light-blue;
+          border: 1px solid $light-blue;
+        }
+      }
+    }
+  }
+  // Escribe a regra necesaria para incluír código do mixin “placeholder” co
+  // parámetro $color con valor $almost-white escurecido un 20% e o parámetro
+  // $font-weight con valor 100 (busca a variable adecuada a este valor).
+  @include placeholder($almost-white, 100);
 }
 
 #section-3 {
   background-color: $light-blue;
   height: 100vh;
   // Define os estilos para o elemento h1 coas seguintes características:
-  h1 {
-    // - debe incluír o código do mixin headers
-    @include headers();
-    // - a cor do texto debe ser $pure-white
-    color: $pure-white;
-    // - un marxe superior de 0
-    margin-top: 0;
-  }
-
+  // - debe incluír o código do mixin headers
+  @include headers;
+  // - a cor do texto debe ser $pure-white
+  color: $pure-white;
+  // - un marxe superior de 0
+  margin-top: 0;
   // Establece os seguintes estilos para .pricing-table
-  // - ancho do 100%
-  // Se analizas o html observarás que pricing-table ten aniñados “price” e
-  // dentro deste hai outros aniñados: img, h2, description, money.
-  // Aquí vanse definir os estilos de cada elemento.
-  // Decide ti o código facendo os aniñamentos necesarios
-  // price debe ter os estilos
-  // - cor do texto $almost-white
-  // - texto centrado
-  // - tamaño da fonte 30px
-  // - ancho do 30%
-  // - display inline-block
-  // - padding 20px todos os lados.
-  // img:
-  // - ancho de 15%
-  // h2:
-  // - peso da fonte de 300 (busca a variable adecuada)
-  // clase description:
-  // - tamaño da fonte 2vh
-  // clase money:
-  // - peso da fonte 700 (busca a variable adecuada)
-  // - tamaño da fonte 50px
-  // Ademais, o primeiro fillo da clase .price debe ter os seguintes estilos
-  // (investiga o operador primeiro fillo)
-  // - borde dereito solid 1px $pure-white
-  // - marxe esquerdo de 18%
+  .pricing-table {
+    // - ancho do 100%
+    width: 100%;
+
+    // Se analizas o html observarás que pricing-table ten aniñados “price” e
+    // dentro deste hai outros aniñados: img, h2, description, money.
+    // Aquí vanse definir os estilos de cada elemento.
+    // Decide ti o código facendo os aniñamentos necesarios
+    // price debe ter os estilos
+    .price {
+      // - cor do texto $almost-white
+      color: $almost-white;
+      // - texto centrado
+      text-align: center;
+      // - tamaño da fonte 30px
+      font-size: 30px;
+      // - ancho do 30%
+      width: 30%;
+      // - display inline-block
+      display: inline-block;
+      // - padding 20px todos os lados.
+      padding: 20px;
+
+      // img:
+      img {
+        // - ancho de 15%
+        width: 15%;
+      }
+      // h2:
+      h2 {
+        // - peso da fonte de 300 (busca a variable adecuada)
+        font-weight: 300;
+      }
+      // clase description:
+      .description {
+        // - tamaño da fonte 2vh
+        font-size: 2vh;
+      }
+
+      // clase money:
+      .money {
+        // - peso da fonte 700 (busca a variable adecuada)
+        font-weight: 700px;
+        // - tamaño da fonte 50px
+        font-size: 50px;
+      }
+    }
+
+    // Ademais, o primeiro fillo da clase .price debe ter os seguintes estilos
+    // (investiga o operador primeiro fillo)
+    .price:nth-child(1) {
+      // - borde dereito solid 1px $pure-white
+      border: 1px solid $pure-white;
+      // - marxe esquerdo de 18%
+      margin-left: 18%;
+    }
+  }
 }

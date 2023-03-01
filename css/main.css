@@ -1,0 +1,22 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 100;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  position: relative;
+  border-top: 50%;
+  overflow-y: -50%;
+}
+
+#section-1 {
+  background: linear-gradient(rgba(0, 22, 86, 0.6), rgba(25, 117, 255, 0.6)), url("../assets/img/cover-picture.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
