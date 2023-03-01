@@ -10,8 +10,7 @@ body {
 
 .content {
   position: relative;
-  border-top: 50%;
-  overflow-y: -50%;
+  transform: translateY(-50%);
 }
 
 #section-1 {
@@ -68,10 +67,9 @@ body {
 }
 #section-2 .content {
   position: relative;
-  border-top: 50%;
-  border-left: 50%;
-  overflow-x: -50%;
-  overflow-y: -50%;
+  top: 50%;
+  left: 50%;
+  transform: translate -50%, -50%;
 }
 #section-2 h1 {
   font-weight: 100;
@@ -130,21 +128,21 @@ body {
   border: 1px solid #4d94ff;
 }
 #section-2 ::-webkit-input-placeholder {
-  color: #fafafa;
+  color: #c7c7c7;
   font-weight: 100;
 }
 #section-2 :-moz-placeholder {
   /* Firefox 18- */
-  color: #fafafa;
+  color: #c7c7c7;
   font-weight: 100;
 }
 #section-2 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #fafafa;
+  color: #c7c7c7;
   font-weight: 100;
 }
 #section-2 :-ms-input-placeholder {
-  color: #fafafa;
+  color: #c7c7c7;
   font-weight: 100;
 }
 
@@ -186,7 +184,7 @@ body {
   font-weight: 700px;
   font-size: 50px;
 }
-#section-3 .pricing-table .price:nth-child(1) {
+#section-3 .pricing-table .price:nth-child {
   border: 1px solid #fff;
   margin-left: 18%;
 }/*# sourceMappingURL=main.css.map */

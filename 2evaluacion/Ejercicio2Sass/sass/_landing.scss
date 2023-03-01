@@ -1,7 +1,6 @@
 .content {
   position: relative;
-  border-top: 50%;
-  overflow-y: -50%;
+  transform: translateY(-50%);
 }
 #section-1 {
   @include bg-covertint(
@@ -119,7 +118,7 @@
   // Escribe a regra necesaria para incluír código do mixin “placeholder” co
   // parámetro $color con valor $almost-white escurecido un 20% e o parámetro
   // $font-weight con valor 100 (busca a variable adecuada a este valor).
-  @include placeholder($almost-white, 100);
+  @include placeholder(darken($almost-white, 20%), 100);
 }
 
 #section-3 {
@@ -179,15 +178,14 @@
         // - tamaño da fonte 50px
         font-size: 50px;
       }
-    }
-
-    // Ademais, o primeiro fillo da clase .price debe ter os seguintes estilos
-    // (investiga o operador primeiro fillo)
-    .price:nth-child(1) {
-      // - borde dereito solid 1px $pure-white
-      border: 1px solid $pure-white;
-      // - marxe esquerdo de 18%
-      margin-left: 18%;
+      // Ademais, o primeiro fillo da clase .price debe ter os seguintes estilos
+      // (investiga o operador primeiro fillo)
+      &:nth-child {
+        // - borde dereito solid 1px $pure-white
+        border: 1px solid $pure-white;
+        // - marxe esquerdo de 18%
+        margin-left: 18%;
+      }
     }
   }
 }

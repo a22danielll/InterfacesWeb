@@ -87,8 +87,7 @@
 }
 @mixin center-vertical() {
   position: relative;
-  border-top: 50%;
-  border-left: 50%;
-  overflow-x: -50%;
-  overflow-y: -50%;
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, -50%);
 }
