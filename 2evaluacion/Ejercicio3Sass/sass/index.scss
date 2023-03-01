@@ -1,0 +1,63 @@
+$colores: (
+  'error': red,
+  'warning': yellow,
+  'accepted': green,
+  'normal': #4040ff,
+);
+@each $name, $colors in $colores {
+  .btn-#{$name} {
+    background-color: $colors;
+    display: inline;
+    padding: 10px;
+    border-radius: 0.5em;
+  }
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  th,
+  td {
+    border: 1px solid black;
+    padding: 1rem;
+  }
+
+  $cor_pares: #cccccc;
+  $cor_impares: #888888;
+  @function column-color($cor-number) {
+    @if ($cor-number%2==0) {
+      @return $cor_pares;
+    } @else {
+      @return $cor_impares;
+    }
+  }
+
+  $inicio: 1;
+  $fin: 10;
+
+  @for $num from $inicio to $fin {
+    tbody tr td:nth-child(#{$num}) {
+      background-color: $colum-color($num);
+    }
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row > * {
+  border: 1px solid black;
+  height: 150px;
+}
+
+$num_elementos: 8;
+
+@function anchura_col($i) {
+  @return (100 / $num_elementos) * $i + '%';
+}
+
+@for $i from 1 through $num_elementos {
+  .row > .col-#{$i} {
+    padding: 1em;
+    width: #{anchura_col($i)};
+  }
+}

@@ -1,0 +1,37 @@
+.btn-error {
+  background-color: red;
+  display: inline;
+  padding: 10px;
+  border-radius: 0.5em;
+}
+
+.btn-warning {
+  background-color: yellow;
+  display: inline;
+  padding: 10px;
+  border-radius: 0.5em;
+}
+
+.btn-accepted {
+  background-color: green;
+  display: inline;
+  padding: 10px;
+  border-radius: 0.5em;
+}
+
+.btn-normal {
+  background-color: #4040ff;
+  display: inline;
+  padding: 10px;
+  border-radius: 0.5em;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  border: 1px solid black;
+  padding: 1rem;
+}/*# sourceMappingURL=index.css.map */
