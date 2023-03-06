@@ -1,0 +1,32 @@
+$primary: darkblue;
+$danger: red;
+$navbar-light-color: $danger;
+$navbar-light-active: $primary;
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/root';
+.compoñenteMeu {
+  color: white;
+  background-color: $primary;
+  border: 5px solid $yellow-500;
+}
+.bg-navbar-customize {
+  @include gradient-y(
+    $start-color: $red-500,
+    $end-color: $white,
+    $start-percent: null,
+    $end-percent: null
+  );
+}
+$custom-colors: (
+  'color-daniel': #56070c,
+  'fondo-daniel': black,
+  'color-daniel2': gold,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+.text {
+  color: $custom-colors;
+}
+@import '../node_modules/bootstrap/scss/bootstrap';
