@@ -1,0 +1,34 @@
+nav {
+  background-color: rgb(145, 111, 175);
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  padding: 1em;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+.container .card {
+  border: 1px solid black;
+  border-radius: 2em;
+  text-align: center;
+  width: 300px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.container .card img {
+  border-radius: 2em;
+  width: 250px;
+  padding: 1em;
+}
+.container .card figcaption {
+  padding-bottom: 1em;
+}
+
+.active {
+  color: white;
+}/*# sourceMappingURL=exercicio.css.map */

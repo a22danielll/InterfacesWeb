@@ -22,11 +22,9 @@ $navbar-light-active: $primary;
 }
 $custom-colors: (
   'color-daniel': #56070c,
-  'fondo-daniel': black,
-  'color-daniel2': gold,
+
+  'texto': gold,
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
-.text {
-  color: $custom-colors;
-}
+
 @import '../node_modules/bootstrap/scss/bootstrap';
